@@ -1,0 +1,38 @@
+{
+  "name": "wallaby-test",
+  "version": "1.0.0",
+  "description": "wallaby test",
+  "public": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wattry/wallaby-test.git"
+  },
+  "author": "Ryan Wattrus",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/wattry/wallaby-test/issues"
+  },
+  "homepage": "https://github.com/wattry/wallaby-test#readme",
+  "devDependencies": {
+    "@types/jest": "26.0.15",
+    "aws-sdk": "2.2.48",
+    "axios": "0.20.0",
+    "husky": "4.3.0",
+    "jest": "26.6.0",
+    "jsonwebtoken": "8.5.1",
+    "lambda-warmer": "1.2.1",
+    "simlog": "0.1.6",
+    "uuid": "8.3.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn jest",
+      "post-merge": "yarn install"
+    }
+  }
+}
