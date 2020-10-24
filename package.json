@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "wallaby test",
   "public": true,
-  "main": "index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch"
@@ -14,10 +13,6 @@
   },
   "author": "Ryan Wattrus",
   "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/wattry/wallaby-test/issues"
-  },
-  "homepage": "https://github.com/wattry/wallaby-test#readme",
   "devDependencies": {
     "@types/jest": "26.0.15",
     "aws-sdk": "2.2.48",
@@ -31,8 +26,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn jest",
-      "post-merge": "yarn install"
+      "pre-commit": "yarn jest"
     }
   }
 }
